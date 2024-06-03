@@ -1,0 +1,12 @@
+
+# 워크플로우 이름
+name: World Workflow test
+on:
+ push:
+    branches:
+    - main
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo 'Hello, JAVA Gradle Package Test1 Actions!'
