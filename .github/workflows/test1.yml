@@ -10,3 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo 'Hello, JAVA Gradle Package Test1 Actions!'
+  pwd-ls:
+    name: PWD & LS
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Directory
+      - run: pwd
+      - name: File List
+      - run: ls -al
